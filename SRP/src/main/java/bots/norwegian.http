@@ -1,0 +1,23 @@
+GET https://services.norwegian.com.dev.nas.dev/retail/availability/calendar?departureAirportCode=OSL&arrivalAirportCode=SVG&startDate=2022-07-10&endDate=2022-07-20&travelerQuantity=1
+Authorization: Basic ZGV2Ok52SWRTYTRxQUFDSElQUFFKbE1FUGdoVkVZUEVCZ29X
+Accept: application/json
+
+###
+
+GET /retail/routes?routes[].departure.airportCode=OSL&routes[].arrival.airportCode=BGO HTTP/1.1
+X-Correlation-Id: e5aa2281-87ec-4630-b38b-5960b77874fc
+Environment: test
+Authorization: Basic ZGV2Ok52SWRTYTRxQUFDSElQUFFKbE1FUGdoVkVZUEVCZ29X
+Accept: application/vnd.nas.routes.v1+json;charset=UTF-8
+Content-Type: application/vnd.nas.routes.v1+json;charset=UTF-8
+Host: services.norwegian.com.dev.nas.dev
+
+###
+
+GET /retail/routes?routes[].departure.airportCode=OSL&routes[].arrival.airportCode=BGO HTTP/1.1
+Authorization: Basic ZGV2Ok52SWRTYTRxQUFDSElQUFFKbE1FUGdoVkVZUEVCZ29X
+Accept: application/vnd.nas.routes.v1+json;charset=UTF-8
+Content-Type: application/vnd.nas.routes.v1+json;charset=UTF-8
+Host: services.norwegian.com.dev.nas.dev
+
+###
